@@ -1,0 +1,70 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out the survey below to help us improve our services.</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <!-- Name Field -->
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <!-- Email Field -->
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <!-- Number Field -->
+            <label id="number-label" for="number">Age:</label>
+            <input id="number" type="number" min="18" max="100" placeholder="Enter your age" required>
+
+            <!-- Dropdown -->
+            <label for="dropdown">Which option best describes you?</label>
+            <select id="dropdown">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <p>How satisfied are you with our service?</p>
+            <label>
+                <input type="radio" name="satisfaction" value="very-satisfied"> Very Satisfied
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="unsatisfied"> Unsatisfied
+            </label>
+
+            <!-- Checkboxes -->
+            <p>What topics are you interested in? (Select all that apply)</p>
+            <label>
+                <input type="checkbox" name="interest" value="technology"> Technology
+            </label>
+            <label>
+                <input type="checkbox" name="interest" value="science"> Science
+            </label>
+            <label>
+                <input type="checkbox" name="interest" value="arts"> Arts
+            </label>
+
+            <!-- Textarea -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+
+            <!-- Submit Button -->
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
